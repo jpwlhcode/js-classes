@@ -48,3 +48,17 @@ document.write("<br>" + congar.color);
 congar.blub();
 congar.eyes = 20;
 document.write(congar.eyes);
+
+let title = document.getElementById("title");
+title.onmouseover = changeStyle;
+title.onmouseout = resetStyle;
+
+function changeStyle() {
+  title.style.color = "red";
+  title.style.textTransform = "uppercase";
+}
+
+function resetStyle() {
+  title.style.color = "";
+  title.style.textTransform = "";
+}
